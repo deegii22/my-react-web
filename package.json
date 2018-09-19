@@ -17,7 +17,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://deegii212.github.io/my-react-web",
+  "homepage": "http://deegii22.github.io/my-react-web",
   "devDependencies": {
     "gh-pages": "^2.0.0"
   }
