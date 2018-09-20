@@ -10,7 +10,7 @@ const Routes = () => (
             <div className="menu">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <Link class="nav-link active" to="/">About</Link>
+                        <Link class="nav-link active" to="/my-react-web">About</Link>
                     </li>
                     <li class="nav-item">
                         <Link class="nav-link" to="/skills">Skills</Link>
@@ -24,7 +24,7 @@ const Routes = () => (
                 </ul>
             </div>
             <div className="container">
-                <Route key="home" exact path="/" component={Home} />
+                <Route key="home" exact path="/my-react-web" component={Home} />
                 <Route key="skills" exact path="/skills" component={Skills} />
                 <Route key="experience" exact path="/experience" component={Experience} />
                 <Route key="education" exact path="/education" component={Education} />
