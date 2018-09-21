@@ -15,16 +15,16 @@ const Routes = () => (
                 <div className="navbar-collapse collapse" id="navbarsExample01">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item">
-                            <Link className="nav-link" to="/">About</Link>
+                            <Link className="nav-link" to="/my-react-web">About</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/skills">Skills</Link>
+                            <Link className="nav-link" to="/my-react-web/skills">Skills</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/experience">Experience</Link>
+                            <Link className="nav-link" to="/my-react-web/experience">Experience</Link>
                         </li>
                         <li className="nav-item">
-                        <Link className="nav-link" to="/education">Education</Link>
+                        <Link className="nav-link" to="/my-react-web/education">Education</Link>
                         </li>
                     </ul>
                 </div>
@@ -32,21 +32,21 @@ const Routes = () => (
             <div className="menu d-none d-sm-block">
                 <ul className="nav flex-column">
                     <li className="nav-item">
-                        <Link className="nav-link active" to="/">About</Link>
+                        <Link className="nav-link active" to="/my-react-web">About</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/skills">Skills</Link>
+                        <Link className="nav-link" to="/my-react-web/skills">Skills</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/experience">Experience</Link>
+                        <Link className="nav-link" to="/my-react-web/experience">Experience</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/education">Education</Link>
+                        <Link className="nav-link" to="/my-react-web/education">Education</Link>
                     </li>
                 </ul>
             </div>
             <div className="container">
-                <Route key="home" exact path="/" component={Home} />
+                <Route key="home" exact path="/my-react-web" component={Home} />
                 <Route key="skills" exact path="/skills" component={Skills} />
                 <Route key="experience" exact path="/experience" component={Experience} />
                 <Route key="education" exact path="/education" component={Education} />
