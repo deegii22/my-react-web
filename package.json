@@ -20,6 +20,7 @@
   },
   "homepage": "http://deegii22.github.io/my-react-web",
   "devDependencies": {
-    "gh-pages": "^2.0.0"
+    "gh-pages": "^2.0.0",
+    "less-loader": "^4.1.0"
   }
 }

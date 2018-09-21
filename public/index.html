@@ -34,7 +34,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <!-- LOCAL -->
-    <script src="/scripts/pt.min.js"></script>
+    <script src="/scripts/jquery.lettering-0.6.1.min.js"></script>
+    <script src="/scripts/jquery.textillate.js"></script>
+    <script src="/scripts/jquery.fittext.js"></script>
+    <!-- <script src="/scripts/pt.min.js"></script> -->
+    <script>
+      $(function (){
+        $('.about')
+          // .fitText(0.1)
+          .textillate({ in: { effect: 'flipInY' }});
+      });
+  </script>
   </head>
   <body>  
     <noscript>
@@ -53,4 +63,4 @@
     -->
   </body>
 </html>
-<script src="/scripts/canvas.js"></script>
+<!-- <script src="/scripts/canvas.js"></script> -->
