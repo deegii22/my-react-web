@@ -46,10 +46,10 @@ const Routes = () => (
                 </ul>
             </div>
             <div className="container">
-                <Route key="home" exact path="/my-react-web" component={Home} />
-                <Route key="skills" exact path="/skills" component={Skills} />
+                <Route key="home" exact path="/my-react-web/my-react-web" component={Home} />
+                <Route key="skills" exact path="/my-react-web/skills" component={Skills} />
                 <Route key="experience" exact path="/experience" component={Experience} />
-                <Route key="education" exact path="/education" component={Education} />
+                <Route key="education" exact path="/my-react-web/education" component={Education} />
             </div>
                 
         </MainLayout>
