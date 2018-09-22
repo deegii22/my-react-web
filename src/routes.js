@@ -21,7 +21,7 @@ const Routes = (match) => (
                 <a id="contact" className="menu-item" href="/contact">Contact</a> */}
             </Menu>
             <div className="container">
-                <Route key="home" exact path='/' component={Home} />
+                <Route key="home" exact path='/my-react-web' component={Home} />
                 <Route key="skills" exact path='/skills' component={Skills} />
                 <Route key="experience" exact path='/experience' component={Experience} />
                 <Route key="education" exact path='/education' component={Education} />
