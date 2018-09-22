@@ -1,29 +1,41 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
+import { withStyles } from '@material-ui/core/styles';
+import Avatar from '@material-ui/core/Avatar';
 
-const Header = () => {
+const styles = {
+    row: {  
+      display: 'flex',
+      justifyContent: 'center',
+    },
+    avatar: {
+      margin: 20,
+      float: 'right',
+    },
+    bigAvatar: {
+      width: 50,
+      height: 50,
+    //   boxShadow: '0 0 20px #ccc',
+    },
+  };
+
+const Header = (props) => {
+    const { classes } = props;
     return (
         <header>
-            {/* <nav className="navbar navbar-default">
-            <div className="container">
-                <div className="navbar-header">
-                <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span className="icon-bar"></span>
-                    <span className="icon-bar"></span>
-                    <span className="icon-bar"></span>                        
-                </button>
-                <a className="navbar-brand" href="#">Me</a>
-                </div>
-                <div className="collapse navbar-collapse" id="myNavbar">
-                <ul className="nav navbar-nav navbar-right">
-                    <li><a href="#">WHO</a></li>
-                    <li><a href="#">WHAT</a></li>
-                    <li><a href="#">WHERE</a></li>
-                </ul>
-                </div>
-            </div>
-            </nav> */}
+            <Avatar
+                alt="Munkhdelger Buyandalai"
+                src="img/avatar.png"
+                className={classNames(classes.avatar, classes.bigAvatar)}
+            />
         </header>
     )
 }
 
-export default Header;
+Header.propTypes = {
+    classes: PropTypes.object.isRequired,
+  };
+
+export default withStyles(styles)(Header);
+;
