@@ -9,14 +9,14 @@ const Routes = (match) => (
         <MainLayout>
             {/* <div id="pt" className="canvas"></div> */}
             <Menu noOverlay  width={ 250 } customBurgerIcon={ <img src="img/menu.png"/> } >
-                <a id="home" className="menu-item" href="/">About</a>
+                <a id="home" className="menu-item" href="/my-react-web">About</a>
                 <a id="about" className="menu-item" href="/skills">Skills</a>
                 <a id="contact" className="menu-item" href="/experience">Experience</a>
                 <a id="contact" className="menu-item" href="/education">Education</a>
                 <a id="contact" className="menu-item" href="/contact">Contact</a>
             </Menu>
             <div className="container">
-                <Route key="home" exact path="/" component={Home} />
+                <Route key="home" exact path="/my-react-web" component={Home} />
                 <Route key="skills" exact path="/skills" component={Skills} />
                 <Route key="experience" exact path="/experience" component={Experience} />
                 <Route key="education" exact path="/education" component={Education} />
