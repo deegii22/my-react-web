@@ -9,23 +9,23 @@ const Routes = (match) => (
         <MainLayout>
             {/* <div id="pt" className="canvas"></div> */}
             <Menu noOverlay  width={ 250 } customBurgerIcon={ <img src="img/menu.png"/> } >
-                {/* <Link id="about" to="/my-react-web" className="menu-item">About</Link>
+                <Link id="about" to="/my-react-web" className="menu-item">About</Link>
                 <Link id="skills" to="/skills" className="menu-item">Skills</Link>
                 <Link id="experience" to="/experience" className="menu-item">Experience</Link>
                 <Link id="education" to="/education" className="menu-item">Education</Link>
-                <Link id="contact" to="/contact" className="menu-item">Contact</Link> */}
-                <a id="home" className="menu-item" href="/">About</a>
+                <Link id="contact" to="/contact" className="menu-item">Contact</Link>
+                {/* <a id="home" className="menu-item" href="/">About</a>
                 <a id="about" className="menu-item" href="/skills">Skills</a>
                 <a id="contact" className="menu-item" href="/experience">Experience</a>
                 <a id="contact" className="menu-item" href="/education">Education</a>
-                <a id="contact" className="menu-item" href="/contact">Contact</a>
+                <a id="contact" className="menu-item" href="/contact">Contact</a> */}
             </Menu>
             <div className="container">
-                <Route key="home" exact path={'${process.env.PUBLIC_URL}/'} component={Home} />
-                <Route key="skills" exact path={'${process.env.PUBLIC_URL}/skills'} component={Skills} />
-                <Route key="experience" exact path={'${process.env.PUBLIC_URL}/experience'} component={Experience} />
-                <Route key="education" exact path={'${process.env.PUBLIC_URL}/education'} component={Education} />
-                <Route key="contact" exact path={'${process.env.PUBLIC_URL}/contact'} component={Contact} />
+                <Route key="home" exact path={process.env.PUBLIC_URL + '/'} component={Home} />
+                <Route key="skills" exact path={process.env.PUBLIC_URL + '/skills'} component={Skills} />
+                <Route key="experience" exact path={process.env.PUBLIC_URL + '/experience'} component={Experience} />
+                <Route key="education" exact path={process.env.PUBLIC_URL + '/education'} component={Education} />
+                <Route key="contact" exact path={process.env.PUBLIC_URL + '/contact'} component={Contact} />
             </div>
         </MainLayout>
     </Router>
