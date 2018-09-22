@@ -9,18 +9,23 @@ const Routes = (match) => (
         <MainLayout>
             {/* <div id="pt" className="canvas"></div> */}
             <Menu noOverlay  width={ 250 } customBurgerIcon={ <img src="img/menu.png"/> } >
+                {/* <Link to="/my-react-web" className="menu-item">About</Link>
+                <Link to="/skills" className="menu-item">Skills</Link>
+                <Link to="/experience" className="menu-item">Experience</Link>
+                <Link to="/education" className="menu-item">Education</Link>
+                <Link to="/contact" className="menu-item">Contact</Link> */}
                 <a id="home" className="menu-item" href="/my-react-web">About</a>
-                <a id="about" className="menu-item" href="/skills">Skills</a>
-                <a id="contact" className="menu-item" href="/experience">Experience</a>
-                <a id="contact" className="menu-item" href="/education">Education</a>
-                <a id="contact" className="menu-item" href="/contact">Contact</a>
+                <a id="about" className="menu-item" href="/my-react-web/skills">Skills</a>
+                <a id="contact" className="menu-item" href="/my-react-web/experience">Experience</a>
+                <a id="contact" className="menu-item" href="/my-react-web/education">Education</a>
+                <a id="contact" className="menu-item" href="/my-react-web/contact">Contact</a>
             </Menu>
             <div className="container">
                 <Route key="home" exact path="/my-react-web" component={Home} />
-                <Route key="skills" exact path="/skills" component={Skills} />
-                <Route key="experience" exact path="/experience" component={Experience} />
-                <Route key="education" exact path="/education" component={Education} />
-                <Route key="contact" exact path="/contact" component={Contact} />
+                <Route key="skills" exact path="/my-react-web/skills" component={Skills} />
+                <Route key="experience" exact path="/my-react-web/experience" component={Experience} />
+                <Route key="education" exact path="/my-react-web/education" component={Education} />
+                <Route key="contact" exact path="/my-react-web/contact" component={Contact} />
             </div>
         </MainLayout>
     </Router>
