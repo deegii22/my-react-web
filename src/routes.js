@@ -21,11 +21,11 @@ const Routes = (match) => (
                 <a id="contact" className="menu-item" href="/contact">Contact</a> */}
             </Menu>
             <div className="container">
-                <Route key="home" exact path={process.env.PUBLIC_URL + '/'} component={Home} />
-                <Route key="skills" exact path={process.env.PUBLIC_URL + '/skills'} component={Skills} />
-                <Route key="experience" exact path={process.env.PUBLIC_URL + '/experience'} component={Experience} />
-                <Route key="education" exact path={process.env.PUBLIC_URL + '/education'} component={Education} />
-                <Route key="contact" exact path={process.env.PUBLIC_URL + '/contact'} component={Contact} />
+                <Route key="home" exact path='/' component={Home} />
+                <Route key="skills" exact path='/skills' component={Skills} />
+                <Route key="experience" exact path='/experience' component={Experience} />
+                <Route key="education" exact path='/education' component={Education} />
+                <Route key="contact" exact path='/contact' component={Contact} />
             </div>
         </MainLayout>
     </Router>
