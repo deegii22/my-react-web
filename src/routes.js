@@ -4,33 +4,50 @@ import { MainLayout } from './modules/layout/containers'
 import { Home } from './modules/home/containers'
 import { slide as Menu } from 'react-burger-menu'
 
-const Routes = (match) => (
-    <Router>
-        <MainLayout>
-            {/* <div id="pt" className="canvas"></div> */}
-            <Menu noOverlay  width={ 250 } customBurgerIcon={ <img src="img/menu.png"/> } >
-                <Link id="about" to="/my-react-web" className="menu-item">About</Link>
-                <Link id="skills" to="/skills" className="menu-item">Skills</Link>
-                <Link id="experience" to="/experience" className="menu-item">Experience</Link>
-                <Link id="education" to="/education" className="menu-item">Education</Link>
-                <Link id="contact" to="/contact" className="menu-item">Contact</Link>
-                {/* <a id="home" className="menu-item" href="/">About</a>
-                <a id="about" className="menu-item" href="/skills">Skills</a>
-                <a id="contact" className="menu-item" href="/experience">Experience</a>
-                <a id="contact" className="menu-item" href="/education">Education</a>
-                <a id="contact" className="menu-item" href="/contact">Contact</a> */}
-            </Menu>
-            <div className="container">
-                <Route key="home" exact path='/my-react-web' component={Home} />
-                <Route key="skills" exact path='/skills' component={Skills} />
-                <Route key="experience" exact path='/experience' component={Experience} />
-                <Route key="education" exact path='/education' component={Education} />
-                <Route key="contact" exact path='/contact' component={Contact} />
-            </div>
-        </MainLayout>
-    </Router>
-)
-const Skills = () => (
+class Routes extends React.Component {
+    constructor (props) {
+      super(props)
+      this.state = {
+        menuOpen: false
+      }
+    }
+    
+    // This can be used to close the menu, e.g. when a user clicks a menu item
+    closeMenu () {
+      this.setState({menuOpen: false})
+    }
+  
+    render () {
+      return (
+        <Router>
+            <MainLayout>
+                {/* <div id="pt" className="canvas"></div> */}
+                <Menu isOpen={this.state.menuOpen} width={ 250 } customBurgerIcon={ <img src="img/menu.png"/> } >
+                    <Link id="about" onClick={() => this.closeMenu()} to="/my-react-web" className="menu-item">About</Link>
+                    <Link id="skills" onClick={() => this.closeMenu()} to="/skills" className="menu-item">Skills</Link>
+                    <Link id="experience" onClick={() => this.closeMenu()} to="/experience" className="menu-item">Experience</Link>
+                    <Link id="education" onClick={() => this.closeMenu()} to="/education" className="menu-item">Education</Link>
+                    <Link id="contact" onClick={() => this.closeMenu()} to="/contact" className="menu-item">Contact</Link>
+                    {/* <a id="home" className="menu-item" href="/">About</a>
+                    <a id="about" className="menu-item" href="/skills">Skills</a>
+                    <a id="contact" className="menu-item" href="/experience">Experience</a>
+                    <a id="contact" className="menu-item" href="/education">Education</a>
+                    <a id="contact" className="menu-item" href="/contact">Contact</a> */}
+                </Menu>
+                <div className="container">
+                    <Route key="home" exact path='/my-react-web' component={Home} />
+                    <Route key="skills" exact path='/skills' component={Skills} />
+                    <Route key="experience" exact path='/experience' component={Experience} />
+                    <Route key="education" exact path='/education' component={Education} />
+                    <Route key="contact" exact path='/contact' component={Contact} />
+                </div>
+            </MainLayout>
+        </Router>
+      )
+    }
+  }
+
+  const Skills = () => (
     <div className="skills">
       <h6>Languages</h6>
       <ul>
