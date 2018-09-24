@@ -201,9 +201,20 @@ h6 {
   .container {
     padding: 30% 0 10%; 
   }
+  .timeline {
+    margin-left: 85px;
+    padding: 50px 0 50px 20px;
+    max-width: 85%;
+  }
   .timeline .event {
     padding-bottom: 0;
     margin-bottom: 0;
+  }
+  .timeline .event:before {
+    left: -170px;
+  }
+  .timeline .event:after {
+    left: -27.85px;
   }
 }
 
