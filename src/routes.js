@@ -23,7 +23,7 @@ class Routes extends React.Component {
             <MainLayout>
                 {/* <div id="pt" className="canvas"></div> */}
                 <Menu isOpen={this.state.menuOpen} width={ 250 } customBurgerIcon={ <img src="img/menu.png"/> } >
-                    <Link id="about" onClick={() => this.closeMenu()} to="/my-react-web" className="menu-item">About</Link>
+                    <Link id="about" onClick={() => this.closeMenu()} to="/" className="menu-item">About</Link>
                     <Link id="skills" onClick={() => this.closeMenu()} to="/skills" className="menu-item">Skills</Link>
                     <Link id="experience" onClick={() => this.closeMenu()} to="/experience" className="menu-item">Experience</Link>
                     <Link id="education" onClick={() => this.closeMenu()} to="/education" className="menu-item">Education</Link>
@@ -35,7 +35,7 @@ class Routes extends React.Component {
                     <a id="contact" className="menu-item" href="/contact">Contact</a> */}
                 </Menu>
                 <div className="container">
-                    <Route key="home" exact path='/my-react-web' component={Home} />
+                    <Route key="home" exact path='/' component={Home} />
                     <Route key="skills" exact path='/skills' component={Skills} />
                     <Route key="experience" exact path='/experience' component={Experience} />
                     <Route key="education" exact path='/education' component={Education} />
