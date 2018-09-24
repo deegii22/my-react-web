@@ -117,16 +117,17 @@ body {
 .skills {
   text-align: center
 }
-ul li {
+.skills ul li {
   display: inline-block;
   margin-right: 20px;
-  list-style: disc;
   font-size: 10pt
+}
+ul li {
+  display: inline;
 }
 ul li:hover {
   color: #E31B6D;
 }
-
 h6 {
   color: #E31B6D;
 }
@@ -184,9 +185,6 @@ h6 {
 }
 
 @media (max-width: 400px){
-  .timeline {
-    
-  }
   body {
     overflow-y: inherit
   }
@@ -197,8 +195,8 @@ h6 {
     font-size: 12pt;
     line-height: 26pt;
   }
-  .contact a{
-    font-size: 18pt !important;
+  .contact a {
+    font-size: 18px;
   }
   .container {
     padding: 30% 0 10%; 
