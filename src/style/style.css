@@ -18,14 +18,14 @@ body {
   overflow-y: hidden; 
 }
 
-/* .canvas {
+.canvas {
   position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100%;
   background: url("http://findmatthew.com/style/../img/filler.png") center center/cover; 
-} */
+}
 
 
 .bm-burger-button img{
@@ -118,7 +118,7 @@ body {
   text-align: center
 }
 ul li {
-  display: inline;
+  display: inline-block;
   margin-right: 20px;
   list-style: disc;
   font-size: 10pt
@@ -186,6 +186,26 @@ h6 {
 @media (max-width: 400px){
   .timeline {
     max-width: 80%
+  }
+  body {
+    overflow-y: inherit
+  }
+  footer {
+    position: relative !important
+  }
+  .about {
+    font-size: 12pt;
+    line-height: 26pt;
+  }
+  .container {
+    padding: 30% 0 10%; 
+  }
+  .timeline .event {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .contact a{
+    font-size: 11pt;
   }
 }
 
