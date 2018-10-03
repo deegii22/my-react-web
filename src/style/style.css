@@ -125,7 +125,7 @@ body {
 ul li {
   display: inline;
 }
-ul li:hover {
+.skills ul li:hover {
   color: #E31B6D;
 }
 h6 {
@@ -153,6 +153,19 @@ h6 {
   padding-bottom: 25px;
   margin-bottom: 50px;
   position: relative;
+}
+.timeline .event h6 {
+  margin-bottom: 0;
+}
+.timeline .event p {
+  margin-top: 10px;
+}
+.timeline .event a {
+  padding: 0 5px;
+  color: rgba(0,0,0,0.87);
+}
+.timeline .event a:hover {
+  color: #E31B6D;
 }
 .timeline .event:last-of-type {
   padding-bottom: 0;

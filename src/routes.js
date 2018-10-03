@@ -131,12 +131,26 @@ const Experience = () => (
             <li className="event" data-date="2016">
                 <h6>SOFTWARE DEVELOPER</h6>
                 <span>Golomt Bank of Mongolia</span>
-                <p></p>     
+                <p>
+                    <u>Projects:</u> 
+                    <a href="https://www.egolomt.mn/corp/AuthenticationController?FORMSGROUP_ID__=AuthenticationFG&__START_TRAN_FLAG__=Y&__FG_BUTTONS__=LOAD&ACTION.LOAD=Y&AuthenticationFG.LOGIN_FLAG=1&BANK_ID=01&LANGUAGE_ID=001" target="_blank">egolomt.mn</a>
+                </p>     
             </li>
             <li className="event" data-date="2013">
                 <h6>WEB MASTER</h6>
                 <span>Sodonsolution LLC</span>
-                <p></p>    
+                <p>
+                <u>Projects:</u> 
+                    <a href="http://english.amartravel.mn" target="_blank">amartravel.mn</a>
+                    <a href="http://english.nepko.mn" target="_blank">nepko.mn</a>
+                    <a href="http://mtgroup.mn/en/" target="_blank">mtgroup.mn</a>
+                    <a href="https://english.iek.mn" target="_blank">iek.mn</a>
+                    <a href="http://www.azkhur.mn" target="_blank">azkhur.mn</a>
+                    <a href="http://english.transparency.mn" target="_blank">transparency.mn</a>
+                    <a href="http://english.khishigarvin.mn" target="_blank">khishigarvin.mn</a>
+                    <a href="http://english.trusttrade.mn" target="_blank">trusttrade.mn</a>
+                    <a href="http://www.emma.mn" target="_blank">emma.mn</a>
+                </p>    
             </li>
             <li className="event" data-date="2012">
                 <p><small>graduated university</small></p>    
@@ -169,7 +183,7 @@ const Education = () => (
 
 const Contact = () => (
     <div className="contact">
-        <p><a><i className="fa fa-map-marker" aria-hidden="true"></i>Oakland, CA</a></p>
+        <p><a><i className="fa fa-map-marker" aria-hidden="true"></i>Alameda, CA</a></p>
         <p><a><i className="fa fa-phone" aria-hidden="true"></i>+1 (415) 279-3780</a></p>
         <p><a href="mailto:munkhdelger.buyandalai@gmail.com"><i className="fa fa-envelope" aria-hidden="true"></i>Email</a></p>
         <p><a href="https://www.linkedin.com/in/munkhdelger-buyandalai/" target="_blank"><i className="fa fa-linkedin-square" aria-hidden="true"></i>Linkedin</a></p>
