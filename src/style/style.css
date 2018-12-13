@@ -16,6 +16,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: hidden; 
+  /* background: url('/img/bg.jpg') 0 0 no-repeat */
 }
 
 .canvas {
@@ -101,11 +102,20 @@ body {
 /* about */
 .about {
   padding-top: 3%;
-  font-size: 32pt;
-  line-height: 50pt;
+  font-size: 25pt;
+  line-height: 40pt;
   text-align: center;
-  padding: 5% 15%;
+  /* padding: 5% 15%; */
+  float: right;
+  width: 60%;
 }
+
+.home-img {
+  position: absolute;
+  top:0;
+  left:0;
+}
+
 .about .word3, .about .word4, .highlight {
   color: #E31B6D;
 }
@@ -239,6 +249,12 @@ footer {
   .about {
     font-size: 12pt;
     line-height: 26pt;
+    width: 100%;
+    float: none;
+    padding: 5% 15%;
+  }
+  .home-img {
+    display: none;
   }
   .contact a {
     font-size: 18px !Important;
