@@ -51,8 +51,8 @@ class Routes extends React.Component {
     <div className="skills">
       <h6>Languages</h6>
       <ul>
-          <li>JavaScript</li>
           <li>Java</li>
+          <li>JavaScript</li>
       </ul>
       <h6>Web</h6>
       <ul>
