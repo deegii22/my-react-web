@@ -114,6 +114,9 @@ body {
   position: absolute;
   top:0;
   left:0;
+  bottom:0;
+  display: flex;
+  justify-content: center;
 }
 
 .about .word3, .about .word4, .highlight {
@@ -156,7 +159,7 @@ h6 {
   list-style: none;
   text-align: left;
   font-weight: 100;
-  max-width: 40%;
+  max-width: 65%;
 }
 .timeline .event {
   border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
@@ -165,7 +168,7 @@ h6 {
   position: relative;
 }
 .timeline .event h6 {
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 .timeline .event p {
   margin-top: 10px;
@@ -173,6 +176,9 @@ h6 {
 .timeline .event a {
   padding: 0 5px;
   color: rgba(0,0,0,0.87);
+}
+.timeline .event u {
+  margin-right: 10px;
 }
 .timeline .event a:hover {
   color: #E31B6D;

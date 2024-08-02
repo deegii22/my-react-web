@@ -26,7 +26,7 @@ const Header = (props) => {
         <header>
             <Avatar
                 alt="Munkhdelger Buyandalai"
-                src="img/avatar.png"
+                src={process.env.PUBLIC_URL + '/img/avatar.png'}
                 className={classNames(classes.avatar, classes.bigAvatar)}
             />
         </header>
