@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/my-react-web/static/css/main.5f1e5fef.css",
-    "main.js": "/my-react-web/static/js/main.47e755d0.js",
+    "main.js": "/my-react-web/static/js/main.32129e83.js",
     "static/media/Raleway-Regular.ttf": "/my-react-web/static/media/Raleway-Regular.c268e80ba67c4a294054.ttf",
     "index.html": "/my-react-web/index.html",
     "main.5f1e5fef.css.map": "/my-react-web/static/css/main.5f1e5fef.css.map",
-    "main.47e755d0.js.map": "/my-react-web/static/js/main.47e755d0.js.map"
+    "main.32129e83.js.map": "/my-react-web/static/js/main.32129e83.js.map"
   },
   "entrypoints": [
     "static/css/main.5f1e5fef.css",
-    "static/js/main.47e755d0.js"
+    "static/js/main.32129e83.js"
   ]
 }
